@@ -1,4 +1,4 @@
-# SearchNovo: Bridging the Gaps between Database Search and De Novo Peptide Sequencing
+# Bridging the Gaps between Database Search and De Novo Peptide Sequencing with SearchNovo (ICLR 2025)
 <p>
   <a href="https://github.com/pytorch/pytorch"> <img src="https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white" height="22px"></a>
   <a href="https://github.com/Lightning-AI/pytorch-lightning"> <img src="https://img.shields.io/badge/-Lightning-792ee5?logo=pytorchlightning&logoColor=white" height="22px"></a>
@@ -37,5 +37,16 @@ python tests/main.py --mode train --data_path processed_parquet_path --config_pa
 To sequence the mass spectra with Searchnovo, use the following command:
 ```shell
 python tests/main.py --mode denovo --data_path processed_parquet_path --ckpt_path ckpt_path --denovo_output_path csv_path --config_path config_path
-``` 
+```
 
+## Citation
+```
+@inproceedings{
+xia2025bridging,
+title={Bridging the Gap between Database Search and {\textbackslash}emph\{De Novo\} Peptide Sequencing with SearchNovo},
+author={Jun Xia and Sizhe Liu and Jingbo Zhou and Shaorong Chen and hongxin xiang and Zicheng Liu and Yue Liu and Stan Z. Li},
+booktitle={The Thirteenth International Conference on Learning Representations},
+year={2025},
+url={https://openreview.net/forum?id=SjMtxqdQ73}
+}
+```
